@@ -27,6 +27,10 @@ const productVariants = {
     { name: 'Sikat Gigi', price: 10000 },
     { name: 'Sapu Pel', price: 15000 },
   ],
+  rokok: [
+    { name: '1 Slop', price: 24000 },
+    { name: '1 Batang', price: 5000 },
+  ],
 };
 
 const formatRupiah = (amount) => new Intl.NumberFormat('id-ID', {
