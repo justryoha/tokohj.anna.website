@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f4f4f4">
+  <meta name="description" content="Toko Hj. Anna — jajanan hangat dan produk pilihan di rumah Anda.">
+  <title>Toko Hj. Anna</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="topbar">
+      <div class="container topbar-inner">
+        <div class="brand-block" aria-label="Logo Toko Hj. Anna">
+          <div class="logo-mark">
+            <span class="logo-kli">TOKO</span>
+            <span class="logo-line">|</span>
+            <span class="logo-indogrosir">HJ. ANNA</span>
+          </div>
+        </div>
+
+        <div class="category-select">
+          <span>Semua Kategori</span>
+          <span class="caret">▾</span>
+        </div>
+
+        <label class="search-box" for="menuSearch" aria-label="Cari produk">
+          <input id="menuSearch" type="search" placeholder="Cari di Toko Hj. Anna" value="">
+          <button type="button" aria-label="Cari">⌕</button>
+        </label>
+
+        <div class="user-actions">
+          <button class="btn-cart" type="button" data-bs-toggle="offcanvas" data-bs-target="#cartPanel" aria-controls="cartPanel">
+            🛒 <span id="cartCount" class="cart-count">0</span>
+          </button>
+          <button class="btn-login" type="button">Masuk</button>
+          <a class="btn-register" href="https://maps.app.goo.gl/ZSb21eguCLEeD17F7" target="_blank" rel="noopener noreferrer">Ke toko langsung</a>
+        </div>
+      </div>
+    </header>
+
+    <div class="notice-bar">
+      <div class="container notice-content">
+        <div class="notice-icon">i</div>
+        <p>Harga yang ditampilkan adalah Toko Hj. Anna. Silakan LOGIN untuk terhubung dengan produk favorit Anda.</p>
+      </div>
+    </div>
+
+    <main class="container main-content">
+      <section class="promo-area" aria-label="Promo utama">
+        <div class="promo-banner single-banner">
+          <div class="promo-slider" aria-live="polite">
+            <img class="promo-slide is-active" src="images/Gambar Tampak Depan Warung.jpg" alt="Tampak depan toko Hj. Anna">
+            <img class="promo-slide" src="images/Gambar Tampak Depan Warung2.jpg" alt="Toko Hj. Anna dari sisi depan">
+            <img class="promo-slide" src="images/Gambar Tampak Dalam Warung.jpg" alt="Suasana dalam toko Hj. Anna">
+            <img class="promo-slide" src="images/Gambar Tampak Dalam Warung2.jpg" alt="Suasana toko Hj. Anna bagian dalam">
+          </div>
+          <button class="promo-arrow promo-arrow--prev" type="button" aria-label="Gambar sebelumnya">‹</button>
+          <button class="promo-arrow promo-arrow--next" type="button" aria-label="Gambar berikutnya">›</button>
+          <div class="slider-dots" aria-label="Pilihan gambar">
+            <span class="slider-dot active"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+            <span class="slider-dot"></span>
+          </div>
+        </div>
+      </section>
+
+      <div class="promo-link-row">
+        <span></span>
+        <a href="#">Lihat Semua Promo</a>
+      </div>
+
+      <section class="category-wrap" aria-label="Kategori produk">
+        <div class="category-item">
+          <div class="category-icon blue">📦</div>
+          <div class="category-text">Kategori</div>
+        </div>
+        <div class="category-item">
+          <div class="category-icon peach">🥡</div>
+          <div class="category-text">Jajanan<br>500an</div>
+        </div>
+        <div class="category-item">
+          <div class="category-icon mint">🧃</div>
+          <div class="category-text">Jajanan<br>2.000an</div>
+        </div>
+        <div class="category-item">
+          <div class="category-icon gold">🍲</div>
+          <div class="category-text">Produk Segar</div>
+        </div>
+        <div class="category-item">
+          <div class="category-icon lilac">🏠</div>
+          <div class="category-text">Rumah<br>Tangga</div>
+        </div>
+        <div class="category-item">
+          <div class="category-icon orange">🍪</div>
+          <div class="category-text">Snack &amp;<br>Biscuit</div>
+        </div>
+        <div class="category-item">
+          <div class="category-icon sky">🚬</div>
+          <div class="category-text">Rokok</div>
+        </div>
+        <div class="category-item">
+          <div class="category-icon pink">🧰</div>
+          <div class="category-text">Perlengkapan<br>Sehari-hari</div>
+        </div>
+        <div class="category-item">
+          <div class="category-icon green">🧽</div>
+          <div class="category-text">Sarana</div>
+        </div>
+      </section>
+
+      <div class="filter-row" aria-label="Filter produk">
+        <button class="filter-chip active" data-filter="all" type="button">Semua</button>
+        <button class="filter-chip" data-filter="promo" type="button">Promo</button>
+        <button class="filter-chip" data-filter="jajanan" type="button">Jajanan</button>
+        <button class="filter-chip" data-filter="rumah" type="button">Rumah Tangga</button>
+      </div>
+
+      <section class="catalog-grid" id="productGrid" aria-label="Produk unggulan">
+        <div class="category-item product-col" data-category="promo" data-name="produk baru">
+          <div class="product-thumb product-thumb--red">PRODUK<br>BARU</div>
+          <div class="category-text">Produk Baru<br>1000an</div>
+          <button class="quick-add" data-name="Produk Baru" data-price="10000" aria-label="Tambah Produk Baru">+</button>
+        </div>
+        <div class="category-item product-col" data-category="promo" data-name="jajanan">
+          <div class="product-thumb product-thumb--cream">Jajanan<br>Untung</div>
+          <div class="category-text">Jajanan<br>500an</div>
+          <button class="quick-add" data-name="Jajanan" data-price="5000" aria-label="Tambah Jajanan">+</button>
+        </div>
+        <div class="category-item product-col" data-category="promo" data-name="produk umkm">
+          <div class="product-thumb product-thumb--blue">UMKM</div>
+          <div class="category-text">Produk UMKM</div>
+          <button class="quick-add" data-name="Produk UMKM" data-price="15000" aria-label="Tambah Produk UMKM">+</button>
+        </div>
+        <div class="category-item product-col" data-category="promo" data-name="rekomendasi">
+          <div class="product-thumb product-thumb--green">Rekomendasi</div>
+          <div class="category-text">Rekomendasi<br>Wargi...</div>
+          <button class="quick-add" data-name="Rekomendasi" data-price="20000" aria-label="Tambah Rekomendasi">+</button>
+        </div>
+        <div class="category-item product-col" data-category="promo" data-name="ibu dan anak">
+          <div class="product-thumb product-thumb--lime">Ibu &amp; Anak</div>
+          <div class="category-text">Ibu &amp; Anak</div>
+          <button class="quick-add" data-name="Ibu & Anak" data-price="18000" aria-label="Tambah Ibu & Anak">+</button>
+        </div>
+        <div class="category-item product-col" data-category="promo" data-name="rokok">
+          <div class="product-thumb product-thumb--orange">Rokok</div>
+          <div class="category-text">Rokok</div>
+          <button class="quick-add" data-name="Rokok" data-price="22000" aria-label="Tambah Rokok">+</button>
+        </div>
+        <div class="category-item product-col" data-category="promo" data-name="perlengkapan hari hari">
+          <div class="product-thumb product-thumb--lavender">Perlengkapan</div>
+          <div class="category-text">Perlengkapan<br>Sehari-hari</div>
+          <button class="quick-add" data-name="Perlengkapan Sehari-hari" data-price="17000" aria-label="Tambah Perlengkapan Sehari-hari">+</button>
+        </div>
+        <div class="category-item product-col" data-category="rumah" data-name="rumah tangga">
+          <div class="product-thumb product-thumb--teal">Rumah<br>Tangga</div>
+          <div class="category-text">Rumah Tangga</div>
+          <button class="quick-add" data-name="Rumah Tangga" data-price="25000" aria-label="Tambah Rumah Tangga">+</button>
+        </div>
+        <div class="category-item product-col" data-category="promo" data-name="minuman">
+          <div class="product-thumb product-thumb--sky">Minuman</div>
+          <div class="category-text">Minuman</div>
+          <button class="quick-add" data-name="Minuman" data-price="12000" aria-label="Tambah Minuman">+</button>
+        </div>
+      </section>
+
+      <div class="promo-mini-strip">
+        <div class="promo-mini-item promo-mini-item--orange">Produk Kembali</div>
+        <div class="promo-mini-item promo-mini-item--beige">Jajanan Unggulan</div>
+        <div class="promo-mini-item promo-mini-item--green">Rumah Tangga</div>
+      </div>
+
+      <p class="empty-state d-none" id="emptyState">Produk tidak ditemukan. Coba kata kunci lain.</p>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container site-footer-inner">
+        <div class="footer-brand">Toko Hj. Anna</div>
+        <p>© <span id="year"></span> Toko Hj. Anna. Semua hak dilindungi.</p>
+      </div>
+    </footer>
+
+    <div class="offcanvas offcanvas-end cart-panel" tabindex="-1" id="cartPanel" aria-labelledby="cartTitle">
+      <div class="offcanvas-header">
+        <div>
+          <span class="eyebrow"><span></span> PESANANMU</span>
+          <h2 class="offcanvas-title" id="cartTitle">Keranjang</h2>
+        </div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Tutup"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div id="cartItems" class="cart-items">
+          <p class="cart-empty">Keranjangmu masih kosong. Pilih menu favoritmu, yuk!</p>
+        </div>
+        <div class="cart-total">
+          <span>Total sementara</span>
+          <b id="cartTotal">Rp0</b>
+        </div>
+        <button class="btn btn-primary-custom w-100" id="checkoutBtn">Lanjut pesan <span>↗</span></button>
+        <p class="checkout-hint">Pesanan akan dikirim langsung ke WhatsApp Toko Hj. Anna.</p>
+      </div>
+    </div>
+
+    <div class="toast-container position-fixed bottom-0 end-0 p-3">
+      <div id="addedToast" class="toast added-toast" role="status" aria-live="polite" aria-atomic="true">
+        <div class="toast-body">
+          <span>💛</span>
+          <span id="toastMessage">Menu ditambahkan ke keranjang.</span>
+          <button type="button" class="btn-close ms-auto" data-bs-dismiss="toast" aria-label="Tutup"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="product-choice-modal" id="productChoiceModal" aria-hidden="true">
+    <div class="product-choice-dialog" role="dialog" aria-modal="true" aria-labelledby="productChoiceTitle">
+      <button class="product-choice-close" type="button" aria-label="Tutup pilihan produk">×</button>
+      <h3 id="productChoiceTitle">Pilih produk</h3>
+      <div id="productChoiceOptions" class="product-choice-options"></div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
