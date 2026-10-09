@@ -83,7 +83,7 @@
         </div>
         <div class="category-item">
           <div class="category-icon peach">🥡</div>
-          <div class="category-text">Jajanan<br>500an</div>
+          <div class="category-text">Jajanan<br>Rp5.000an</div>
         </div>
         <div class="category-item">
           <div class="category-icon mint">🧃</div>
@@ -126,46 +126,55 @@
         <div class="category-item product-col" data-category="promo" data-name="produk baru">
           <div class="product-thumb product-thumb--red">PRODUK<br>BARU</div>
           <div class="category-text">Produk Baru<br>1000an</div>
+          <p class="product-description">Pilihan camilan kecil dan jajanan harga hemat.</p>
           <button class="quick-add" data-name="Produk Baru" data-price="10000" aria-label="Tambah Produk Baru">+</button>
         </div>
         <div class="category-item product-col" data-category="promo" data-name="jajanan">
           <div class="product-thumb product-thumb--cream">Jajanan<br>Untung</div>
-          <div class="category-text">Jajanan<br>500an</div>
+          <div class="category-text">Jajanan<br>Rp5.000an</div>
+          <p class="product-description">Beberapa pilihan snack dan jajanan ringan.</p>
           <button class="quick-add" data-name="Jajanan" data-price="5000" aria-label="Tambah Jajanan">+</button>
         </div>
         <div class="category-item product-col" data-category="promo" data-name="produk umkm">
           <div class="product-thumb product-thumb--blue">UMKM</div>
           <div class="category-text">Produk UMKM</div>
+          <p class="product-description">Produk pilihan dari usaha lokal.</p>
           <button class="quick-add" data-name="Produk UMKM" data-price="15000" aria-label="Tambah Produk UMKM">+</button>
         </div>
         <div class="category-item product-col" data-category="promo" data-name="rekomendasi">
           <div class="product-thumb product-thumb--green">Rekomendasi</div>
           <div class="category-text">Rekomendasi<br>Wargi...</div>
+          <p class="product-description">Camilan favorit untuk teman santai.</p>
           <button class="quick-add" data-name="Rekomendasi" data-price="20000" aria-label="Tambah Rekomendasi">+</button>
         </div>
-        <div class="category-item product-col" data-category="promo" data-name="ibu dan anak">
+        <div class="category-item product-col" data-category="promo" data-name="ibu anak">
           <div class="product-thumb product-thumb--lime">Ibu &amp; Anak</div>
           <div class="category-text">Ibu &amp; Anak</div>
+          <p class="product-description">Kebutuhan praktis untuk ibu dan si kecil.</p>
           <button class="quick-add" data-name="Ibu & Anak" data-price="18000" aria-label="Tambah Ibu & Anak">+</button>
         </div>
         <div class="category-item product-col" data-category="promo" data-name="rokok">
           <div class="product-thumb product-thumb--orange">Rokok</div>
           <div class="category-text">Rokok</div>
+          <p class="product-description">Tersedia pilihan kemasan dan eceran.</p>
           <button class="quick-add" data-name="Rokok" data-price="22000" aria-label="Tambah Rokok">+</button>
         </div>
-        <div class="category-item product-col" data-category="promo" data-name="perlengkapan hari hari">
+        <div class="category-item product-col" data-category="promo" data-name="perlengkapan sehari hari">
           <div class="product-thumb product-thumb--lavender">Perlengkapan</div>
           <div class="category-text">Perlengkapan<br>Sehari-hari</div>
+          <p class="product-description">Barang praktis untuk kebutuhan harian.</p>
           <button class="quick-add" data-name="Perlengkapan Sehari-hari" data-price="17000" aria-label="Tambah Perlengkapan Sehari-hari">+</button>
         </div>
         <div class="category-item product-col" data-category="rumah" data-name="rumah tangga">
           <div class="product-thumb product-thumb--teal">Rumah<br>Tangga</div>
           <div class="category-text">Rumah Tangga</div>
+          <p class="product-description">Perlengkapan kebersihan dan kebutuhan rumah.</p>
           <button class="quick-add" data-name="Rumah Tangga" data-price="25000" aria-label="Tambah Rumah Tangga">+</button>
         </div>
         <div class="category-item product-col" data-category="promo" data-name="minuman">
           <div class="product-thumb product-thumb--sky">Minuman</div>
           <div class="category-text">Minuman</div>
+          <p class="product-description">Pilihan minuman untuk menemani aktivitas.</p>
           <button class="quick-add" data-name="Minuman" data-price="12000" aria-label="Tambah Minuman">+</button>
         </div>
       </section>
@@ -203,7 +212,7 @@
           <b id="cartTotal">Rp0</b>
         </div>
         <button class="btn btn-primary-custom w-100" id="checkoutBtn">Lanjut pesan <span>↗</span></button>
-        <p class="checkout-hint">Pesanan akan dikirim langsung ke WhatsApp Toko Hj. Anna.</p>
+        <p class="checkout-hint">WhatsApp akan terbuka dengan rincian pesanan. Tekan Kirim di WhatsApp untuk mengirimnya ke toko.</p>
       </div>
     </div>
 
@@ -222,6 +231,7 @@
     <div class="product-choice-dialog" role="dialog" aria-modal="true" aria-labelledby="productChoiceTitle">
       <button class="product-choice-close" type="button" aria-label="Tutup pilihan produk">×</button>
       <h3 id="productChoiceTitle">Pilih produk</h3>
+      <p id="productChoiceDescription" class="product-choice-description"></p>
       <div id="productChoiceOptions" class="product-choice-options"></div>
     </div>
   </div>
